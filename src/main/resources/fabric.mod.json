@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "datascript",
+  "version": "${version}",
+
+  "name": "DataScript",
+  "description": "Lua support for datapacks, powered by LuaJ",
+  "authors": [
+    "BenCrafterRED"
+  ],
+
+  "icon": "assets/datascript/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "bencrafterred.datascript.DataScriptMod"
+    ]
+  },
+  "mixins": [
+    "datascript.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
